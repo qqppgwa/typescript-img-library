@@ -1,8 +1,8 @@
 import React from 'react';
-import Search from './containers/Search';
+import Main from './containers/Main';
 
 function App() {
-  return <Search />;
+  return <Main />;
 }
 
 export default App;
