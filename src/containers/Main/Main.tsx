@@ -1,4 +1,4 @@
-import TabsNav from '../TabsNav';
+import TabsNav from './TabsNav';
 import { Wrapper } from './Styled';
 
 const Main = () => {
