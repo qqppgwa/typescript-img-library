@@ -1,11 +1,7 @@
-import { useState } from 'react';
-import classnames from 'clsx';
-import { TIsSearchTab } from '../../../types';
-import { TAB_SEARCH, TAB_FAVORITE } from '../../../constants';
-import { NavWrapper, LogoLink, Tab, Tabs } from './Styled';
+import { NavWrapper, LogoLink, TabLink, Tabs } from './Styled';
 
-const TabsNav = ({ isSearchTab }: TIsSearchTab) => {
-  const handleTabChange = () => {};
+const TabsNav = () => {
+  // const handleTabChange = () => {};
 
   return (
     <NavWrapper>
@@ -16,8 +12,8 @@ const TabsNav = ({ isSearchTab }: TIsSearchTab) => {
       </LogoLink>
       {/* Page selector */}
       <Tabs>
-        <Tab className={classnames({ active: isSearchTab })}>Search</Tab>
-        <Tab className={classnames({ active: !isSearchTab })}>Favorite ()</Tab>
+        <TabLink to="/search">Search</TabLink>
+        <TabLink to="/favorites">Favorite ()</TabLink>
       </Tabs>
     </NavWrapper>
   );

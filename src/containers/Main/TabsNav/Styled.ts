@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const NavWrapper = styled.nav`
   display: flex;
@@ -27,7 +28,7 @@ export const Tabs = styled.div`
   gap: 20px;
 `;
 
-export const Tab = styled.div`
+export const TabLink = styled(NavLink)`
   color: #ccc;
   &.active {
     color: #4a4a4a;
