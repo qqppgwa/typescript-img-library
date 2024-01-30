@@ -5,3 +5,7 @@ export const Wrapper = styled.div`
   height: 100vh;
   background-color: #fff;
 `;
+export const TabView = styled.div`
+  display: flex;
+  flex-direction: column;
+`;

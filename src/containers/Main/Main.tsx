@@ -1,10 +1,20 @@
+import { useState } from 'react';
 import TabsNav from './TabsNav';
-import { Wrapper } from './Styled';
+import Search from '../Search';
+import Favorites from '../Favorites';
+import { Wrapper, TabView } from './Styled';
+import { TAB_SEARCH, TAB_FAVORITE } from '../../constants';
+
+type TTab = typeof TAB_SEARCH | typeof TAB_FAVORITE;
 
 const Main = () => {
+  const [currentTab, setCurrentTab] = useState<TTab>(TAB_SEARCH);
+  const isSearchTab = currentTab === TAB_SEARCH;
+
   return (
     <Wrapper>
-      <TabsNav />
+      <TabsNav isSearchTab={isSearchTab} currentTab={currentTab} />
+      <TabView>{isSearchTab ? <Search /> : <Favorites />}</TabView>
     </Wrapper>
   );
 };

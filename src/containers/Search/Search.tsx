@@ -1,7 +1,7 @@
-import React from 'react';
+import { SearchWrapper } from './Styled';
 
 const Search = () => {
-  return <div>Search</div>;
+  return <SearchWrapper placeholder="Start searching for images!" />;
 };
 
 export default Search;

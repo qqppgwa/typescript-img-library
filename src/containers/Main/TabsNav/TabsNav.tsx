@@ -1,14 +1,10 @@
 import { useState } from 'react';
 import classnames from 'clsx';
+import { TIsSearchTab } from '../../../types';
 import { TAB_SEARCH, TAB_FAVORITE } from '../../../constants';
 import { NavWrapper, LogoLink, Tab, Tabs } from './Styled';
 
-type TTab = typeof TAB_SEARCH | typeof TAB_FAVORITE;
-
-const TabsNav = () => {
-  const [currentTab, setCurrentTab] = useState<TTab>(TAB_SEARCH);
-  const isSearchTab = currentTab === TAB_SEARCH;
-
+const TabsNav = ({ isSearchTab }: TIsSearchTab) => {
   const handleTabChange = () => {};
 
   return (
