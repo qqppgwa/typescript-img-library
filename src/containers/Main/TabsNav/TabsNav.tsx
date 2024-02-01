@@ -1,8 +1,6 @@
 import { NavWrapper, LogoLink, TabLink, Tabs } from './Styled';
 
 const TabsNav = () => {
-  // const handleTabChange = () => {};
-
   return (
     <NavWrapper>
       {/* logo button */}

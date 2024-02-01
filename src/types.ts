@@ -1,7 +1,14 @@
-import { TAB_SEARCH, TAB_FAVORITE } from './constants';
+/** fetch search result params  */
+export type TGiphySearchParams = {
+  keyword: string;
+};
+/** fetch favorite params */
+export type TFetchFavoritesParams = {
+  ids: string[];
+};
 
-export type TTab = typeof TAB_SEARCH | typeof TAB_FAVORITE;
-export type TIsSearchTab = {
-  isSearchTab: boolean;
-  currentTab: TTab;
+/** gifs list components props */
+export type TGifsResultContainer = {
+  keyword?: string;
+  handleFetch: any;
 };

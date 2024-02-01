@@ -5,7 +5,9 @@ import { Wrapper } from './Styled';
 const Main = () => {
   return (
     <Wrapper>
+      {/* tab bar */}
       <TabsNav />
+      {/* tab view */}
       <Outlet />
     </Wrapper>
   );
