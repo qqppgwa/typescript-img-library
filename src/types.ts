@@ -10,5 +10,6 @@ export type TFetchFavoritesParams = {
 /** gifs list components props */
 export type TGifsResultContainer = {
   keyword?: string;
+  widthRefEle?: HTMLDivElement | null;
   handleFetch: any;
 };

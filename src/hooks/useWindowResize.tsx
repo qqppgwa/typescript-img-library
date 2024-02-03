@@ -1,11 +1,11 @@
 import { useLayoutEffect, useState } from 'react';
 import { throttle } from 'throttle-debounce';
 
-const useWindowResize = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+const useWindowResize = (widthRefEle:any) => {
+  const [windowWidth, setWindowWidth] = useState(widthRefEle.clientWidth);
 
   const windowSizeUpdate = () => {
-    setWindowWidth(window.innerWidth);
+    setWindowWidth(widthRefEle.clientWidth);
   };
 
   const resize = throttle(500, windowSizeUpdate);

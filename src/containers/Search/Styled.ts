@@ -12,3 +12,8 @@ export const SearchWrapper = styled.input`
   line-height: 3;
   color: #4a4a4a;
 `;
+
+export const ListWrapper = styled.div`
+  width: 90%;
+  margin: auto;
+`;
