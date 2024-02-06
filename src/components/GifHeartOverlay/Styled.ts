@@ -20,4 +20,8 @@ export const Overlay = styled.div`
   &:hover {
     opacity: 1;
   }
+
+  &.like{
+    opacity: 1;
+  }
 `;
