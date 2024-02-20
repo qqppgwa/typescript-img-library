@@ -5,3 +5,8 @@ export const GridWrapper = styled.div`
   justify-content: center;
   width: 100%;
 `;
+
+export const NoResult = styled.p`
+  display: flex;
+  justify-content: center;
+`;

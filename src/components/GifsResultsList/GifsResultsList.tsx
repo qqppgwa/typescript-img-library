@@ -4,7 +4,7 @@ import { TGifsResultContainer } from '../../types';
 import { MEDIA_ENDPOINT, COLS_MOBILE, COLS_WEB } from '../../constants';
 import useWindowResize from '../../hooks/useWindowResize';
 import GifHeartOverlay from '../GifHeartOverlay';
-import { GridWrapper } from './Styled';
+import { GridWrapper, NoResult } from './Styled';
 
 const GifsResultsList = ({
   keyword,
@@ -22,6 +22,7 @@ const GifsResultsList = ({
         width={windowWidth}
         overlay={GifHeartOverlay}
         key={keyword}
+        noResultsMessage={<NoResult>No Result</NoResult>}
         noLink
       />
     </GridWrapper>
