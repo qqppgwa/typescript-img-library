@@ -1,3 +1,13 @@
+# Gif Search with Giphy api
+This is a refactored version of my old project ( [this repository](https://github.com/qqppgwa/react-img-library) ), by Typescript 
+
+demo video:
+
+https://github.com/qqppgwa/typescript-img-library/assets/36188868/16e85486-b557-44e5-b1e4-603a9504e3b8
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
