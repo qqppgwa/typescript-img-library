@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Search from './containers/Search';
@@ -12,8 +12,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
+      { index: true, element: <Navigate to="/search" replace /> },  // index route, navigate to /search
       { path: '/search', element: <Search /> },
       { path: '/favorites', element: <Favorites /> },
+      { path:'*', element: <Navigate to="/search" replace /> } // fallback route, navigate to /search
     ],
   },
 ]);
